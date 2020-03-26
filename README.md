@@ -200,13 +200,14 @@ typedef struct
 
     <hr>
 
-    ## **[tDevReturn]*(#)
+## **[tDevReturn]*(#)
     Structure to return the device status when the command is correctly executed or return the error code when the command is incorrectly executed
 
-    ```c
 
-    typedef struct
-    {
+```c++
+
+typedef struct
+{
         int iLogicCode; // logic error code
         int iPhyCode; // physical error code
         int iHandle; // handling methods: 0-do nothing; 1-initialize; 2-resend the command
@@ -217,7 +218,7 @@ typedef struct
 
 ```
 
-<hr>
+<hr/>
 
 ## **CIM_CancelPrepare**
 Cancel the module to enter the status of receiving notes.
