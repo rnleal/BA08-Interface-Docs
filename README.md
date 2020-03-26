@@ -196,9 +196,10 @@ typedef struct
         long lDenomination; // denomination value 
         char cSerial; // currency version, e.g.: A
 }tCIMCashProperty;
+
 ```
 
-    <hr>
+<hr>
 
 ## **[tDevReturn]*(#)
     Structure to return the device status when the command is correctly executed or return the error code when the command is incorrectly executed
