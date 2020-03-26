@@ -201,21 +201,24 @@ typedef struct
 
 <hr>
 
-## **[tDevReturn]*(#)
-    Structure to return the device status when the command is correctly executed or return the error code when the command is incorrectly executed
+## **tDevReturn**
+
+Structure to return the device status when the command is correctly executed or return the error code when the command is incorrectly executed
 
 
 ```c++
 
 typedef struct
 {
-        int iLogicCode; // logic error code
-        int iPhyCode; // physical error code
-        int iHandle; // handling methods: 0-do nothing; 1-initialize; 2-resend the command
-        int iType; // type of error:: 0-warning, 1-serious
-        char acDevReturn[128]; // returned information from the 1fzåazmzE   Q44hardware
-    char acReserve[128]; // reserved information. It records the information about the original errors (errors only) actually returned from the hardware, and does not need to be converted.
-}[tDevReturn]; //member descriptio(#)
+    int iLogicCode; // logic error code
+    int iPhyCode; // physical error code
+    int iHandle; // handling methods: 0-do nothing; 1-initialize; 2-resend the command
+    int iType; // type of error:: 0-warning, 1-serious
+    char acDevReturn[128]; // returned information from the 1fzåazmzE   Q44hardware
+    
+    // reserved information. It records the information about the original errors (errors only) actually returned from the hardware, and does not need to be converted.
+    char acReserve[128]; 
+}tDevReturn; //member description
 
 ```
 
@@ -224,7 +227,7 @@ typedef struct
 ## **CIM_CancelPrepare**
 Cancel the module to enter the status of receiving notes.
 
-```c
+```c++
 int Cim_CancelPrepare([tDevReturn]*p_psStatus)(#)
 ```
 
