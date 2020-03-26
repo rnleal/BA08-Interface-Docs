@@ -195,8 +195,8 @@ typedef struct
         char acCurrency[4]; // currency, e.g.: CNY 
         long lDenomination; // denomination value 
         char cSerial; // currency version, e.g.: A
-    }tCIMCashProperty;
-    ```
+}tCIMCashProperty;
+```
 
     <hr>
 
